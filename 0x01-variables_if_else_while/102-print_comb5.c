@@ -40,7 +40,7 @@ int main(void)
 			}
 			b++;
 		}
-		a++;
+		a = a + 1;
 	}
 	putchar('\n');
 	return (0);
