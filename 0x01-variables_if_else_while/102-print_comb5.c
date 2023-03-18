@@ -11,9 +11,8 @@ int main(void)
 {
 	int a, b, c, d;
 
-	a = 48;
 	b = 48;
-	while (a < 58)
+	for (a = 48; a < 58; a++)
 	{
 		while (b < 58)
 		{
@@ -40,7 +39,6 @@ int main(void)
 			}
 			b++;
 		}
-		a = a + 1;
 	}
 	putchar('\n');
 	return (0);
