@@ -11,9 +11,9 @@ int main(void)
 {
 	int a, b, c, d;
 
-	b = 48;
 	for (a = 48; a < 58; a++)
 	{
+		b = 48;
 		while (b < 58)
 		{
 			c = a;
