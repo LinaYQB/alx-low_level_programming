@@ -17,7 +17,7 @@ int main(void)
 	{
 		while (b < 58)
 		{
-			c = a + 1;
+			c = a;
 			while (c < 58)
 			{
 				d = b + 1;
