@@ -10,19 +10,19 @@
 int main(void)
 {
 	int count;
-	unsigned long int x, y, z;
+	unsigned long long int x, y, z;
 
 	x = 1;
 	y = 2;
 	count  = 3;
 
-	printf("%lu, %lu, ", x, y);
+	printf("%llu, %llu, ", x, y);
 	while (count <= 98)
 	{
 		z = x + y;
 		x = y;
 		y = z;
-		printf("%lu", z);
+		printf("%llu", z);
 		if (count != 98)
 			printf(", ");
 		count++;
