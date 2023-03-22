@@ -17,9 +17,9 @@ int main(void)
 
 	while (y <= 4000000)
 	{
-		if ((b % 2) == 0)
+		if ((y % 2) == 0)
 		{
-			sum = sum + b;
+			sum = sum + y;
 		}
 		z = x + y;
 		x = y;
