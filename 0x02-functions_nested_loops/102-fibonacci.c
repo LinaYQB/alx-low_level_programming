@@ -10,7 +10,7 @@
 int main(void)
 {
 	int i;
-	unsigned long long tab[50];
+	unsigned long int tab[50];
 
 	tab[0] = 1;
 	tab[1] = 2;
@@ -21,7 +21,7 @@ int main(void)
 	}
 	for (i = 0; i < 50; i++)
 	{
-		printf("%llu", tab[i]);
+		printf("%lu", tab[i]);
 		if (i != 49)
 			printf(", ");
 	}
