@@ -10,7 +10,7 @@
 int main(void)
 {
 	int count;
-	unsigned long long int x, y, z;
+	unsigned long long x, y, z;
 
 	x = 1;
 	y = 2;
