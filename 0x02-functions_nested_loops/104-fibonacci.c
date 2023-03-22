@@ -24,6 +24,7 @@ int main(void)
 		printf("%d", z);
 		if (count != 98)
 			printf(", ");
+		count++;
 	}
 	printf("\n");
 	return (0);
