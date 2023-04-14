@@ -49,7 +49,7 @@ char *large_mul(char *s1, char *s2)
 	if (!t)
 		printf("Error\n"), exit(98);
 	while (a--)
-		r[a] = 0;
+		t[a] = 0;
 
 	for (lg1--; lg1 >= 0; lg1--)
 	{
