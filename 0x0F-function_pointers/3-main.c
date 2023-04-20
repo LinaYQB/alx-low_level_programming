@@ -1,24 +1,28 @@
 #include "3-calc.h"
-#include <stdlib.h>
-#include <stdio.h>
 
 /**
- * main - entry point
- * @argc: number of argument
+ * main - Entry point
+ * @argc: number of arguments
  * @argv: argument vector
- * Return: always 0 (Success)
+ * Return: Always 0 (success)
 */
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
-	int (*op)(int, int);
+	int (*op)(int, int), x, y;
 
 	if (argc != 4)
 		printf("Error\n"), exit(98);
+
+	x = atoi(argv[1]);
+	y = atoi(argv[3]);
 
 	op = get_op_func(argv[2]);
 	if (!op)
 		printf("Error\n"), exit(99);
 
-	printf("%d\n", op(atoi(argv[1]), atoi(argv[3])));
+	if (!y && (argv[2][0] == '/' || argv[2][0] == '%'))
+		printf("Error\n"), exit(100);
+
+	printf("%d\n", op(x, y));
 	return (0);
 }
