@@ -14,7 +14,7 @@ size_t free_listint_safe(listint_t **h)
 	if (h == NULL || *h == NULL)
 		return (0);
 
-	loopnode = find_listint_loop(*h);
+	loopnode = find_listint_loop(&(*h));
 	for (i = 0; (*h != loopnode || lp) && *h != NULL; *h = next)
 	{
 		i++;
@@ -29,7 +29,7 @@ size_t free_listint_safe(listint_t **h)
 			i++;
 			next = next->next;
 			free((*h)->next);
-			loop = 0;
+			lp = 0;
 		}
 		free(*h);
 	}
